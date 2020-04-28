@@ -422,7 +422,7 @@ end
 % Plot with vertical legend:
 % legend(plot([t;t;t;t;t;t;t;t;t;t]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);X(7,:);X(8,:);X(9,:);X(10,:)]'),{'X1','X2','X3','X4','X5','X6','X7','X8','X9','X10'});
 % Plot with horizontal legend:
-legend(plot([t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);X(7,:);X(8,:);X(9,:);X(10,:);X(11,:);X(12,:);X(13,:);X(14,:);X(15,:);]'),{'X1(ste)','X2(str)','X3(se)','X4(srte)','X5(srtr)','X6(sre)','X7(ps)','X8(bs)','X9(cs)','X10(fs)','X11(as)','X12(wpc)','X13(wfc)','X14(hpc)','X15(hfc)'},'Orientation','horizontal');
+legend(plot([t;t;t;t;t;t;t;t;]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);X(7,:);X(8,:);X(9,:);X(10,:);X(11,:);X(12,:);X(13,:);X(14,:);X(15,:);]'),{'X1(ste)','X2(str)','X3(se)','X4(p)','X5(Wsp)','X6(Wpe)','X7(Hsp)','X8(Hpe)'},'Orientation','horizontal');
 %legend(plot([t;t;t;t;t;t;]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);]'),{'X1(s)','X2(srs)','X3(e)','X4(p)','X5(Wsp)','X6(Wpe)'},'Orientation','horizontal');
 % Store data in Excel file:
 % xlswrite('example.xls',X');
