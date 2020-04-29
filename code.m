@@ -78,7 +78,7 @@ mb=[1 NaN NaN NaN NaN   %\\X1 - ss te\\\%
     3 7 10 NaN NaN      %\\X6 - srs emdr\\\%
     4 6 9 10 NaN        %\\X7 - ps b\\\%
     4 5 8 9 10          %\\X8 - bs te b\\\%
-    4 9 10 11 NaN       %\\X9 - cs b\\\%
+    4 9 10 11 6       %\\X9 - cs b\\\%
     6 7 9 NaN NaN       %\\X10 - fs b\\\%
     4 5 NaN NaN NaN     %\\X11 - as te\\\%
     7 9 12 NaN NaN      %\\X12 - W ps cb\\\%
@@ -94,29 +94,29 @@ mcwv=[1 NaN NaN NaN NaN     %\\X1 - ss te\\\%
     1 -0.1 -0.1 NaN NaN     %\\X6 - srs emdr\\\%
     0.8 -0.3 -0.6 1.1 NaN   %\\X7 - ps b\\\%
     0.8 0.8 1 -0.3 0.8      %\\X8 - bs te b\\\%
-    0.8 NaN NaN -0.4 NaN    %\\X9 - cs b\\\%
-    -0.1 1.1 -0.6 NaN NaN   %\\X10 - fs b\\\%
+    0.1 NaN NaN -0.5 0.7    %\\X9 - cs b\\\%
+    -0.1 1.1 -1.5 NaN NaN   %\\X10 - fs b\\\%
     0.6 0.1 NaN NaN NaN     %\\X11 - as te\\\%
-    1 1 -0.1 NaN NaN           %\\X12 - W ps cb\\\%
-    1 1 -0.1 NaN NaN           %\\X13 - W fs cb\\\%
-    -0.6 1 -0.1 1 NaN          %\\X14 - H ps cb\\\%
-    -0.6 1 -0.1 1 NaN]         %\\X15 - H fs cb\\\%
+    0.1 1 1 NaN NaN           %\\X12 - W ps cb\\\%
+    0.1 1 1 NaN NaN           %\\X13 - W fs cb\\\%
+    0.545 1 -0.3 1 NaN          %\\X14 - H ps cb\\\%
+    0.6 1 -0.3 1 NaN]         %\\X15 - H fs cb\\\%
 
 msv=[1    %\\X1 - ss te\\\%
     0.8     %\\X2 - ss tr\\\%
     0.1    %\\X3 - ss emdr\\\%
     0.6     %\\X4 - srs te\\\%
     0.6     %\\X5 - srs tr\\\%
-    0.02    %\\X6 - srs emdr\\\%
+    0.03    %\\X6 - srs emdr\\\%
     0.2     %\\X7 - ps b\\\%
     0.1     %\\X8 - bs te b\\\%
     0.05     %\\X9 - cs b\\\%
-    0.2     %\\X10 - fs b\\\%
+    0.03     %\\X10 - fs b\\\%
     0.1     %\\X11 - as te\\\%
     NaN     %\\X12 - W ps cb\\\%
     NaN     %\\X13 - W fs cb\\\%
-    0.2     %\\X14 - H ps cb\\\%
-    0.2]    %\\X15 - H fs cb\\\%
+    0.3     %\\X14 - H ps cb\\\%
+    0.3]    %\\X15 - H fs cb\\\%
 
 mcfwv=[1 NaN NaN NaN    %\\X1 - ss te\\\%
     1 NaN NaN NaN       %\\X2 - ss tr\\\%
@@ -192,7 +192,7 @@ mcfpv = cat(3,[1 1      %\\X1 - ss te\\\%
     NaN NaN
     NaN NaN])
 %%%%% X1 X2 X3 X4 X5 X6  X7  X8  X9 X10 X11 X12  X13  X14  X15  %%%%%%
-iv = [1; 1; 0; 0; 0; 0; 0.1; 0; 0; 0.1; 0; 0; 0; 0; 0;]
+iv = [1; 1; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0;]
 % This is the vector of initial values for all states
 
 %%%%%%%%%%%%%% Adaptation role matrices %%%%%%%%%%%%%
