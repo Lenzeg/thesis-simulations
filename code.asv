@@ -92,11 +92,11 @@ mcwv=[1 NaN NaN NaN NaN     %\\X1 - ss te\\\%
     1 0.8 -0.6 0.3 NaN      %\\X4 - srs te\\\%
     1 NaN NaN NaN NaN       %\\X5 - srs tr\\\%
     1 -0.1 -0.1 NaN NaN     %\\X6 - srs emdr\\\%
-    0.8 -0.3 -0.6 1.1 NaN   %\\X7 - ps b\\\%
+    0.8 -0.1 -0.6 1.1 NaN   %\\X7 - ps b\\\%
     0.8 0.8 1 -0.3 0.8      %\\X8 - bs te b\\\%
     0.8 NaN NaN -0.4 NaN    %\\X9 - cs b\\\%
     -0.1 1.1 -0.6 NaN NaN   %\\X10 - fs b\\\%
-    0.1 0.6 NaN NaN NaN     %\\X11 - as te\\\%
+    0.3 0.3 NaN NaN NaN     %\\X11 - as te\\\%
     1 1 1 NaN NaN           %\\X12 - W ps cb\\\%
     1 1 1 NaN NaN           %\\X13 - W fs cb\\\%
     1 1 -0.1 1 NaN          %\\X14 - H ps cb\\\%
@@ -104,7 +104,7 @@ mcwv=[1 NaN NaN NaN NaN     %\\X1 - ss te\\\%
 
 msv=[1    %\\X1 - ss te\\\%
     0.8     %\\X2 - ss tr\\\%
-    0.3    %\\X3 - ss emdr\\\%
+    0.02    %\\X3 - ss emdr\\\%
     0.6     %\\X4 - srs te\\\%
     0.6     %\\X5 - srs tr\\\%
     0.02    %\\X6 - srs emdr\\\%
@@ -112,7 +112,7 @@ msv=[1    %\\X1 - ss te\\\%
     0.1     %\\X8 - bs te b\\\%
     0.2     %\\X9 - cs b\\\%
     0.2     %\\X10 - fs b\\\%
-    0.1     %\\X11 - as te\\\%
+    0.5     %\\X11 - as te\\\%
     NaN     %\\X12 - W ps cb\\\%
     NaN     %\\X13 - W fs cb\\\%
     0.3     %\\X14 - H ps cb\\\%
@@ -154,7 +154,7 @@ mcfpv = cat(3,[1 1      %\\X1 - ss te\\\%
     5 0.2               %\\X4 - srs te\\\%
     5 0.2               %\\X5 - srs tr\\\%
     NaN NaN
-    5 0.2               %\\X7 - ps b\\\%
+    3 0.2               %\\X7 - ps b\\\%
     5 0.2               %\\X8 - bs te b\\\%
     5 0.2               %\\X9 - cs b\\\%
     5 0.2               %\\X10 - fs b\\\%
