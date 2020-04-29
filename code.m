@@ -25,7 +25,7 @@ global k;
 
 %\\\\\\\\\\\\\\\\\\ TO BE FILLED \\\\\\\\\\\\\\\\\\\%
 %%%%%%%%%%%%%% Combination functions used %%%%%%%%%%%%
-mcf=[1 2 3]
+mcf=[1 2 3 35]
 % eucl, alog, hebb
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %///////////////////////////////////////////////////%
@@ -70,73 +70,73 @@ mcf=[1 2 3]
 %\\\\\\\\\\\\\\\\\\ TO BE FILLED \\\\\\\\\\\\\\\\\\\%
 %%%%%%%%%%%%%%% Value role matrices %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% and Initial values %%%%%%%%%%%%%%%%%
-mb=[1 NaN NaN NaN NaN
-    2 NaN NaN NaN NaN
-    3 NaN NaN NaN NaN
-    1 7 9 11 NaN
-    2 NaN NaN NaN NaN
-    3 7 10 NaN NaN
-    4 6 9 10 NaN
-    4 5 8 9 10
-    4 9 10 11 NaN
-    6 7 9 NaN NaN
-    4 5 NaN NaN NaN
-    7 9 12 NaN NaN
-    10 9 13 NaN NaN
-    7 9 12 14 NaN
-    10 9 13 15 NaN]
+mb=[1 NaN NaN NaN NaN   %\\X1 - ss te\\\%
+    2 NaN NaN NaN NaN   %\\X2 - ss tr\\\%
+    3 NaN NaN NaN NaN   %\\X3 - ss emdr\\\%
+    1 7 9 11 NaN        %\\X4 - srs te\\\%  
+    2 NaN NaN NaN NaN   %\\X5 - srs tr\\\%
+    3 7 10 NaN NaN      %\\X6 - srs emdr\\\%
+    4 6 9 10 NaN        %\\X7 - ps b\\\%
+    4 5 8 9 10          %\\X8 - bs te b\\\%
+    4 9 10 11 NaN       %\\X9 - cs b\\\%
+    6 7 9 NaN NaN       %\\X10 - fs b\\\%
+    4 5 NaN NaN NaN     %\\X11 - as te\\\%
+    7 9 12 NaN NaN      %\\X12 - W ps cb\\\%
+    10 9 13 NaN NaN     %\\X13 - W fs cb\\\%
+    7 9 12 14 NaN       %\\X14 - H ps cb\\\%
+    10 9 13 15 NaN]     %\\X15 - H fs cb\\\%
 
-mcwv=[1 NaN NaN NaN NaN
-    1 NaN NaN NaN NaN
-    1 NaN NaN NaN NaN
-    1 0.8 -0.6 0.3 NaN
-    1 NaN NaN NaN NaN
-    1 -0.1 -0.1 NaN NaN
-    0.8 -0.5 NaN 1.1 NaN
-    0.8 0.8 1 -0.3 0.8
-    0.8 NaN NaN -0.4 NaN
-    -0.5 1.1 NaN NaN NaN
-    0.1 0.6 NaN NaN NaN
-    1 1 1 NaN NaN
-    1 1 1 NaN NaN
-    1 1 -0.1 1 NaN
-    1 1 -0.1 1 NaN]
+mcwv=[1 NaN NaN NaN NaN     %\\X1 - ss te\\\%
+    1 NaN NaN NaN NaN       %\\X2 - ss tr\\\%
+    1 NaN NaN NaN NaN       %\\X3 - ss emdr\\\%
+    1 0.8 -0.6 0.3 NaN      %\\X4 - srs te\\\%
+    1 NaN NaN NaN NaN       %\\X5 - srs tr\\\%
+    1 -0.1 -0.1 NaN NaN     %\\X6 - srs emdr\\\%
+    0.8 -0.5 -0.6 1.1 NaN   %\\X7 - ps b\\\%
+    0.8 0.8 1 -0.3 0.8      %\\X8 - bs te b\\\%
+    0.8 NaN NaN -0.4 NaN    %\\X9 - cs b\\\%
+    -0.5 1.1 -0.6 NaN NaN   %\\X10 - fs b\\\%
+    0.1 0.6 NaN NaN NaN     %\\X11 - as te\\\%
+    1 1 1 NaN NaN           %\\X12 - W ps cb\\\%
+    1 1 1 NaN NaN           %\\X13 - W fs cb\\\%
+    1 1 -0.1 1 NaN          %\\X14 - H ps cb\\\%
+    1 1 -0.1 1 NaN]         %\\X15 - H fs cb\\\%
 
-msv=[0.6
-    0.8
-    0.1
-    0.6
-    0.6
-    0.1
-    0.3
-    0.1
-    0.2
-    0.3
-    0.1
-    NaN
-    NaN
-    0.4
-    0.4]
+msv=[0.6    %\\X1 - ss te\\\%
+    0.8     %\\X2 - ss tr\\\%
+    0.1     %\\X3 - ss emdr\\\%
+    0.6     %\\X4 - srs te\\\%
+    0.6     %\\X5 - srs tr\\\%
+    0.1     %\\X6 - srs emdr\\\%
+    0.3     %\\X7 - ps b\\\%
+    0.1     %\\X8 - bs te b\\\%
+    0.2     %\\X9 - cs b\\\%
+    0.3     %\\X10 - fs b\\\%
+    0.1     %\\X11 - as te\\\%
+    NaN     %\\X12 - W ps cb\\\%
+    NaN     %\\X13 - W fs cb\\\%    
+    0.4     %\\X14 - H ps cb\\\%   
+    0.4]    %\\X15 - H fs cb\\\%
 
-mcfwv=[1 NaN NaN
-    1 NaN NaN
-    1 NaN NaN
-    NaN 1 NaN
-    NaN 1 NaN
-    NaN 1 NaN
-    NaN 1 NaN
-    NaN 1 NaN
-    NaN 1 NaN
-    NaN 1 NaN
-    NaN 1 NaN
-    NaN NaN 1
-    NaN NaN 1
-    NaN 1 NaN
-    NaN 1 NaN]
+mcfwv=[1 NaN NaN NaN    %\\X1 - ss te\\\%
+    1 NaN NaN NaN       %\\X2 - ss tr\\\%
+    NaN NaN NaN 1       %\\X3 - ss emdr\\\%
+    NaN 1 NaN NaN       %\\X4 - srs te\\\%
+    NaN 1 NaN NaN       %\\X5 - srs tr\\\%
+    NaN 1 NaN NaN       %\\X6 - srs emdr\\\%
+    NaN 1 NaN NaN       %\\X7 - ps b\\\%
+    NaN 1 NaN NaN       %\\X8 - bs te b\\\%
+    NaN 1 NaN NaN       %\\X9 - cs b\\\%
+    NaN 1 NaN NaN       %\\X10 - fs b\\\%
+    NaN 1 NaN NaN       %\\X11 - as te\\\%
+    NaN NaN 1 NaN       %\\X12 - W ps cb\\\%
+    NaN NaN 1 NaN       %\\X13 - W fs cb\\\%
+    NaN 1 NaN NaN       %\\X14 - H ps cb\\\%  
+    NaN 1 NaN NaN]      %\\X15 - H fs cb\\\%
 
-mcfpv = cat(3,[1 1
-    1 1
-    1 1
+mcfpv = cat(3,[1 1  
+    1 1             
+    NaN NaN
     NaN NaN
     NaN NaN
     NaN NaN
@@ -176,9 +176,23 @@ mcfpv = cat(3,[1 1
     NaN NaN
     1 NaN
     1 NaN
+    NaN NaN],[NaN NaN
+    NaN NaN
+    140 60
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
     NaN NaN])
 
-iv = [1; 0.3; 0.2; 0; 0; 0; 0.1; 0; 0; 0.1; 0; 0.1; 0.1; 0.1; 0.1;]
+iv = [1; 0.3; 0; 0; 0; 0; 0.1; 0; 0; 0.1; 0; 0.1; 0.1; 0.1; 0.1;]
 % This is the vector of initial values for all states
 
 %\\\\\\\\\\\\\\\\\\ TO BE FILLED \\\\\\\\\\\\\\\\\\\%
@@ -190,10 +204,10 @@ mcwa=[NaN NaN NaN NaN NaN
     NaN NaN NaN NaN NaN
     NaN NaN NaN NaN NaN
     NaN NaN NaN NaN NaN
-    NaN NaN 12 NaN NaN
+    NaN NaN NaN NaN NaN
     NaN NaN NaN NaN NaN
     NaN 12 13 NaN NaN
-    NaN NaN 13 NaN NaN
+    NaN NaN NaN NaN NaN
     NaN NaN NaN NaN NaN
     NaN NaN NaN NaN NaN
     NaN NaN NaN NaN NaN
@@ -216,23 +230,37 @@ msa=[NaN
     NaN
     NaN]
 
-mcfwa=[NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN
-    NaN NaN NaN]
+mcfwa=[NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN
+    NaN NaN NaN NaN]
 
 mcfpa=cat(3,[NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN
+    NaN NaN],[NaN NaN
     NaN NaN
     NaN NaN
     NaN NaN
@@ -282,7 +310,7 @@ mcfpa=cat(3,[NaN NaN
 
 %\\\\\\\\\\\\\\\\\\ TO BE FILLED \\\\\\\\\\\\\\\\\\\%
 %%%%%%%%%%%%% End time and Step size dt %%%%%%%%%%%%%
-endtimeofsimulation=40;
+endtimeofsimulation=200;
 dt=0.5;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %///////////////////////////////////////////////////%
@@ -422,7 +450,7 @@ end
 % Plot with vertical legend:
 % legend(plot([t;t;t;t;t;t;t;t;t;t]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);X(7,:);X(8,:);X(9,:);X(10,:)]'),{'X1','X2','X3','X4','X5','X6','X7','X8','X9','X10'});
 % Plot with horizontal legend:
-legend(plot([t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);X(7,:);X(8,:);X(9,:);X(10,:);X(11,:);X(12,:);X(13,:);X(14,:);X(15,:);]'),{'X1(ste)','X2(str)','X3(se)','X4(srte)','X5(srtr)','X6(sre)','X7(ps)','X8(bs)','X9(cs)','X10(fs)','X11(as)','X12(wpc)','X13(wfc)','X14(hpc)','X15(hfc)'},'Orientation','horizontal');
+legend(plot([t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);X(7,:);X(8,:);X(9,:);X(10,:);X(11,:);X(12,:);X(13,:);X(14,:);X(15,:);]'),{'X1(ste)','X2(str)','X3(se)','X4(srte)','X5(srtr)','X6(sre)','X7(ps)','X8(bs)','X9(cs)','X10(fs)','X11(as)','X12(wpc)','X13(wfc)','X14(hpc)','X15(hfc)'},'Orientation','vertical');
 %legend(plot([t;t;t;t;t;t;]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);]'),{'X1(s)','X2(srs)','X3(e)','X4(p)','X5(Wsp)','X6(Wpe)'},'Orientation','horizontal');
 % Store data in Excel file:
 % xlswrite('example.xls',X');
