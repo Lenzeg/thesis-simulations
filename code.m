@@ -99,12 +99,12 @@ mcwv=[1 NaN NaN NaN NaN     %\\X1 - ss te\\\%
     0.1 0.6 NaN NaN NaN     %\\X11 - as te\\\%
     1 1 1 NaN NaN           %\\X12 - W ps cb\\\%
     1 1 1 NaN NaN           %\\X13 - W fs cb\\\%
-    1 1 -0.1 1 NaN          %\\X14 - H ps cb\\\%
-    1 1 -0.1 1 NaN]         %\\X15 - H fs cb\\\%
+    -0.6 1 -0.1 1 NaN          %\\X14 - H ps cb\\\%
+    -0.6 1 -0.1 1 NaN]         %\\X15 - H fs cb\\\%
 
 msv=[1    %\\X1 - ss te\\\%
     0.8     %\\X2 - ss tr\\\%
-    0.3    %\\X3 - ss emdr\\\%
+    0.1    %\\X3 - ss emdr\\\%
     0.6     %\\X4 - srs te\\\%
     0.6     %\\X5 - srs tr\\\%
     0.02    %\\X6 - srs emdr\\\%
@@ -123,7 +123,7 @@ mcfwv=[1 NaN NaN NaN    %\\X1 - ss te\\\%
     NaN NaN NaN 1       %\\X3 - ss emdr\\\%
     NaN 1 NaN NaN       %\\X4 - srs te\\\%
     NaN 1 NaN NaN       %\\X5 - srs tr\\\%
-    NaN NaN NaN 1       %\\X6 - srs emdr\\\%
+    NaN 1 NaN NaN       %\\X6 - srs emdr\\\%
     NaN 1 NaN NaN       %\\X7 - ps b\\\%
     NaN 1 NaN NaN       %\\X8 - bs te b\\\%
     NaN 1 NaN NaN       %\\X9 - cs b\\\%
@@ -153,7 +153,7 @@ mcfpv = cat(3,[1 1      %\\X1 - ss te\\\%
     NaN NaN
     5 0.2               %\\X4 - srs te\\\%
     5 0.2               %\\X5 - srs tr\\\%
-    NaN NaN
+    5 0.2               %\\X6 - srs emdr\\\%
     5 0.2               %\\X7 - ps b\\\%
     5 0.2               %\\X8 - bs te b\\\%
     5 0.2               %\\X9 - cs b\\\%
@@ -178,10 +178,10 @@ mcfpv = cat(3,[1 1      %\\X1 - ss te\\\%
     1 NaN               %\\X13 - W fs cb\\\%
     NaN NaN],[NaN NaN
     NaN NaN
-    141 61              %\\X3 - ss emdr\\\%
+    141 60              %\\X3 - ss emdr\\\%
     NaN NaN
     NaN NaN
-    139 59              %\\X6 - srs emdr\\\%
+    NaN NaN              
     NaN NaN
     NaN NaN
     NaN NaN
@@ -192,7 +192,7 @@ mcfpv = cat(3,[1 1      %\\X1 - ss te\\\%
     NaN NaN
     NaN NaN])
 %%%%% X1 X2 X3 X4 X5 X6  X7  X8  X9 X10 X11 X12  X13  X14  X15  %%%%%%
-iv = [1; 1; 0; 0; 0; 0; 0.1; 0; 0; 0.1; 0; 0.1; 0.1; 0.1; 0.1;]
+iv = [1; 1; 0; 0; 0; 0; 0.1; 0; 0; 0.1; 0; 0.1; 0.1; 0; 0;]
 % This is the vector of initial values for all states
 
 %%%%%%%%%%%%%% Adaptation role matrices %%%%%%%%%%%%%
