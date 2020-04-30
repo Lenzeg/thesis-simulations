@@ -89,16 +89,16 @@ mb=[1 NaN NaN NaN NaN   %\\X1 - ss te\\\%
 mcwv=[1 NaN NaN NaN NaN     %\\X1 - ss te\\\%
     1 NaN NaN NaN NaN       %\\X2 - ss tr\\\%
     1 NaN NaN NaN NaN       %\\X3 - ss emdr\\\%
-    1 0.8 -0.6 0.3 NaN      %\\X4 - srs te\\\%
+    1 0.8 -0.6 0.01 NaN      %\\X4 - srs te\\\%
     1 NaN NaN NaN NaN       %\\X5 - srs tr\\\%
     1 -0.1 -0.1 NaN NaN     %\\X6 - srs emdr\\\%
-    0.5 -1 -1 1.1 NaN   %\\X7 - ps b\\\%
+    0.8 -1 -0.2 1 NaN   %\\X7 - ps b\\\%
     0.8 0.8 1 -0.3 0.8      %\\X8 - bs te b\\\%
-    -0.2 NaN NaN 0.2 NaN    %\\X9 - cs b\\\%
-    -1 1.1 -0.1 NaN NaN   %\\X10 - fs b\\\%
+    -0.21 NaN NaN 0.19 NaN    %\\X9 - cs b\\\%
+    -0.65 1 -1 NaN NaN   %\\X10 - fs b\\\%
     0.6 0.1 NaN NaN NaN     %\\X11 - as te\\\%
-     1 0.5 1 NaN NaN           %\\X12 - W ps cb\\\%
-     1 0.5 1 NaN NaN           %\\X13 - W fs cb\\\%
+     1 1 1 NaN NaN           %\\X12 - W ps cb\\\%
+     1 1 1 NaN NaN           %\\X13 - W fs cb\\\%
     -1 1 0.1 1 NaN          %\\X14 - H ps cb\\\%
     -1 1 0.1 1 NaN]         %\\X15 - H fs cb\\\%
 
@@ -110,13 +110,13 @@ msv=[1    %\\X1 - ss te\\\%
     0.1    %\\X6 - srs emdr\\\%
     0.2     %\\X7 - ps b\\\%
     0.1     %\\X8 - bs te b\\\%
-    0.8     %\\X9 - cs b\\\%
-    0.05     %\\X10 - fs b\\\%
+    0.2     %\\X9 - cs b\\\%
+    0.04     %\\X10 - fs b\\\%
     0.1     %\\X11 - as te\\\%
     NaN     %\\X12 - W ps cb\\\%
     NaN     %\\X13 - W fs cb\\\%
     0.4    %\\X14 - H ps cb\\\%
-    0.4]    %\\X15 - H fs cb\\\%
+    0.8]    %\\X15 - H fs cb\\\%
 
 mcfwv=[1 NaN NaN NaN    %\\X1 - ss te\\\%
     1 NaN NaN NaN       %\\X2 - ss tr\\\%
@@ -157,11 +157,11 @@ mcfpv = cat(3,[1 1      %\\X1 - ss te\\\%
     5 0.2               %\\X7 - ps b\\\%
     5 0.2               %\\X8 - bs te b\\\%
     20 0.05              %\\X9 - cs b\\\%
-    5 0.2               %\\X10 - fs b\\\%
+    5 0.4               %\\X10 - fs b\\\%
     6 0.2               %\\X11 - as te\\\%
     NaN NaN
     NaN NaN
-    5 0.3                %\\X14 - H ps cb\\\%
+    5 0.2                %\\X14 - H ps cb\\\%
     5 0.2  ],[NaN NaN      %\\X15 - H fs cb\\\%
     NaN NaN
     NaN NaN
