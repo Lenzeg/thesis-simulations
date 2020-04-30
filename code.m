@@ -89,34 +89,34 @@ mb=[1 NaN NaN NaN NaN   %\\X1 - ss te\\\%
 mcwv=[1 NaN NaN NaN NaN     %\\X1 - ss te\\\%
     1 NaN NaN NaN NaN       %\\X2 - ss tr\\\%
     1 NaN NaN NaN NaN       %\\X3 - ss emdr\\\%
-    1 0.8 -1 0.3 NaN      %\\X4 - srs te\\\%
+    1 0.8 -0.6 0.3 NaN      %\\X4 - srs te\\\%
     1 NaN NaN NaN NaN       %\\X5 - srs tr\\\%
     1 -0.1 -0.1 NaN NaN     %\\X6 - srs emdr\\\%
-    0.8 -0.3 -0.6 1.1 NaN   %\\X7 - ps b\\\%
+    0.5 -1 -1 1.1 NaN   %\\X7 - ps b\\\%
     0.8 0.8 1 -0.3 0.8      %\\X8 - bs te b\\\%
-    0.8 NaN NaN -0.5 NaN    %\\X9 - cs b\\\%
-    -0.1 1.1 -1.5 NaN NaN   %\\X10 - fs b\\\%
+    -0.2 NaN NaN 0.2 NaN    %\\X9 - cs b\\\%
+    -1 1.1 -0.1 NaN NaN   %\\X10 - fs b\\\%
     0.6 0.1 NaN NaN NaN     %\\X11 - as te\\\%
-    0.01 3 1 NaN NaN           %\\X12 - W ps cb\\\%
-    0.01 3 1 NaN NaN           %\\X13 - W fs cb\\\%
-    0.49 1 -0.3 1 NaN          %\\X14 - H ps cb\\\%
-    0.58 1 -0.3 1 NaN]         %\\X15 - H fs cb\\\%
+     1 0.5 1 NaN NaN           %\\X12 - W ps cb\\\%
+     1 0.5 1 NaN NaN           %\\X13 - W fs cb\\\%
+    -1 1 0.1 1 NaN          %\\X14 - H ps cb\\\%
+    -1 1 0.1 1 NaN]         %\\X15 - H fs cb\\\%
 
 msv=[1    %\\X1 - ss te\\\%
-    0.8     %\\X2 - ss tr\\\%
-    0.1    %\\X3 - ss emdr\\\%
+    0.3     %\\X2 - ss tr\\\%
+    0.8    %\\X3 - ss emdr\\\%
     0.6     %\\X4 - srs te\\\%
-    0.6     %\\X5 - srs tr\\\%
-    0.03    %\\X6 - srs emdr\\\%
+    0.3     %\\X5 - srs tr\\\%
+    0.15    %\\X6 - srs emdr\\\%
     0.2     %\\X7 - ps b\\\%
     0.1     %\\X8 - bs te b\\\%
-    0.01     %\\X9 - cs b\\\%
-    0.8     %\\X10 - fs b\\\%
+    0.8     %\\X9 - cs b\\\%
+    0.05     %\\X10 - fs b\\\%
     0.1     %\\X11 - as te\\\%
     NaN     %\\X12 - W ps cb\\\%
     NaN     %\\X13 - W fs cb\\\%
-    0.08    %\\X14 - H ps cb\\\%
-    0.035]    %\\X15 - H fs cb\\\%
+    0.4    %\\X14 - H ps cb\\\%
+    0.4]    %\\X15 - H fs cb\\\%
 
 mcfwv=[1 NaN NaN NaN    %\\X1 - ss te\\\%
     1 NaN NaN NaN       %\\X2 - ss tr\\\%
@@ -156,13 +156,13 @@ mcfpv = cat(3,[1 1      %\\X1 - ss te\\\%
     5 0.2               %\\X6 - srs emdr\\\%
     5 0.2               %\\X7 - ps b\\\%
     5 0.2               %\\X8 - bs te b\\\%
-    25 0.4              %\\X9 - cs b\\\%
-    6 0.1               %\\X10 - fs b\\\%
+    20 0.05              %\\X9 - cs b\\\%
+    5 0.2               %\\X10 - fs b\\\%
     6 0.2               %\\X11 - as te\\\%
     NaN NaN
     NaN NaN
-    10 0.89                 %\\X14 - H ps cb\\\%
-    10 0.93  ],[NaN NaN      %\\X15 - H fs cb\\\%
+    5 0.3                %\\X14 - H ps cb\\\%
+    5 0.2  ],[NaN NaN      %\\X15 - H fs cb\\\%
     NaN NaN
     NaN NaN
     NaN NaN
