@@ -85,7 +85,7 @@ mb=[1 NaN NaN NaN NaN   %\\X1 - ss te\\\%
     10 9 13 NaN NaN     %\\X13 - W fs cb\\\%
     7 9 12 14 NaN       %\\X14 - H ps cb\\\%
     10 9 13 15 NaN]     %\\X15 - H fs cb\\\%
-
+% 
 mcwv=[1 NaN NaN NaN NaN     %\\X1 - ss te\\\%
     1 NaN NaN NaN NaN       %\\X2 - ss tr\\\%
     1 NaN NaN NaN NaN       %\\X3 - ss emdr\\\%
@@ -104,10 +104,10 @@ mcwv=[1 NaN NaN NaN NaN     %\\X1 - ss te\\\%
 
 msv=[1    %\\X1 - ss te\\\%
     0.3     %\\X2 - ss tr\\\%
-    0.8    %\\X3 - ss emdr\\\%
+    0.3    %\\X3 - ss emdr\\\%
     0.6     %\\X4 - srs te\\\%
     0.3     %\\X5 - srs tr\\\%
-    0.15    %\\X6 - srs emdr\\\%
+    0.1    %\\X6 - srs emdr\\\%
     0.2     %\\X7 - ps b\\\%
     0.1     %\\X8 - bs te b\\\%
     0.8     %\\X9 - cs b\\\%
