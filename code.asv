@@ -449,7 +449,9 @@ end
 % Plot with vertical legend:
 % legend(plot([t;t;t;t;t;t;t;t;t;t]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);X(7,:);X(8,:);X(9,:);X(10,:)]'),{'X1','X2','X3','X4','X5','X6','X7','X8','X9','X10'});
 % Plot with horizontal legend:
-legend(plot([t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);X(7,:);X(8,:);X(9,:);X(10,:);X(11,:);X(12,:);X(13,:);X(14,:);X(15,:);]','LineWidth',2),{'X1 - ss_{te}','X2 - ss_{tr}','X3- ss_{emdr}','X4 - srs_{te}','X5 - srs_{tr}','X6 - srs_{emdr}','X7 - ps_b','X8 - bs_{b,te}','X9 - cs_b','X10 - fs_b','X11 - as_{te}','X12 - W_{ps_{b},cs_{b}}','X13 - W_{fs_{b},cs_{b}}','X14 - H_{ps_{b},cs_{b}}','X15 - H_{fs_{b},cs_{b}}'},'Orientation','vertical', 'FontSize',13);
+cmap = jet(15);
+
+legend(plot([t;t;t;t;t;t;t;t;t;t;t;t;t;t;t;]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);X(7,:);X(8,:);X(9,:);X(10,:);X(11,:);X(12,:);X(13,:);X(14,:);X(15,:);]','LineWidth',2, 'Color', cmap(),{'X1 - ss_{te}','X2 - ss_{tr}','X3- ss_{emdr}','X4 - srs_{te}','X5 - srs_{tr}','X6 - srs_{emdr}','X7 - ps_b','X8 - bs_{b,te}','X9 - cs_b','X10 - fs_b','X11 - as_{te}','X12 - W_{ps_{b},cs_{b}}','X13 - W_{fs_{b},cs_{b}}','X14 - H_{ps_{b},cs_{b}}','X15 - H_{fs_{b},cs_{b}}'},'Orientation','vertical');
 
 %legend(plot([t;t;t;t;t;t;]', [X(1,:);X(2,:);X(3,:);X(4,:); X(5,:);X(6,:);]'),{'X1(s)','X2(srs)','X3(e)','X4(p)','X5(Wsp)','X6(Wpe)'},'Orientation','horizontal');
 % Store data in Excel file:
